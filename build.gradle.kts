@@ -65,6 +65,10 @@ fun buildDocsCmd(language: String, type: String) : String {
     val baseDir = "${buildDir}/docs/${language}"
     return "-m sphinx -N -a -E . ${baseDir}/${type} -b ${type} -d ${baseDir}/doctrees"
 }
+fun buildDocsCmdRinoh(language: String, type: String) : String {
+    val baseDir = "${buildDir}/docs/${language}"
+    return "-m sphinx -N -a -E . ${baseDir}/${type} -b rinoh -d ${baseDir}/doctrees"
+}
 
 tasks.register<PythonTask>("htmlDocsEn") {
     workDir = "${projectDir}/docs/user/en/src"
@@ -92,7 +96,7 @@ tasks.register<PythonTask>("pdfDocsIt") {
 
 tasks.register<PythonTask>("pdfDocsZh") {
     workDir = "${projectDir}/docs/user/zh/src"
-    command = buildDocsCmd("zh", "pdf")
+    command = buildDocsCmdRinoh("zh", "pdf")
 }
 
 

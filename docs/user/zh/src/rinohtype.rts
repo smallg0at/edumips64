@@ -1,0 +1,10 @@
+[STYLESHEET]
+name=Chinese Specifics
+description=Small tweaks made to the Sphinx style sheet
+base=sphinx
+
+[VARIABLES]
+mono_typeface=.\docs\user\zh\src\sarasa-gothic-sc-regular.ttf
+serif_typeface=.\docs\user\zh\src\sarasa-gothic-sc-regular.ttf
+sans_typeface=.\docs\user\zh\src\sarasa-gothic-sc-regular.ttf
+fallback_typeface=.\docs\user\zh\src\sarasa-gothic-sc-regular.ttf

@@ -33,3 +33,5 @@ latex_documents = [
   ('index', 'EduMIPS64.tex', u'EduMIPS64 Documentation',
    u'Andrea Spadaccini (and the EduMIPS64 development team)', 'manual'),
 ]
+
+rinoh_documents = [dict(doc='index', target='manual', template = './docs/user/zh/src/rinohtype.rts')]
